@@ -21,6 +21,11 @@ jobs:
             fi
           done
           ls -R | head -n 300
+          echo "=== CI FILE ==="
+          cat .github/workflows/ci.yml
+          echo "=== END CI FILE ==="
+          mkdir -p /tmp/hold
+          mv .github/workflows/ci.yml /tmp/hold/ci.yml
           rm -f ./*.zip
           rm -f .github/workflows/unzip.yml
           git config user.name "haiderstudio"
