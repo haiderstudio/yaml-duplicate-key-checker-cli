@@ -1,0 +1,4 @@
+database:
+  host: db.example.com
+  host: db-backup.example.com
+  port: 5432

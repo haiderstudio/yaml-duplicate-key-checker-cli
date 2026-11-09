@@ -1,0 +1,6 @@
+# A clean server config.
+host: localhost
+port: 8080
+tls:
+  enabled: true
+  cert: /etc/ssl/cert.pem
